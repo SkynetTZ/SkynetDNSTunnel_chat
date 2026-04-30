@@ -1,6 +1,8 @@
 # SkynetDNSTunnel_chat
 DNS-over-UDP messaging system that tunnels chat traffic through DNS TXT queries and responses.
 
+<img width="1534" height="475" alt="WhatsApp Image 2026-04-30 at 11 38 44" src="https://github.com/user-attachments/assets/3d27217e-4a9e-4357-9d52-1425d53309be" />
+
 Skynet UDP Tunnel Chat is a Python-based DNS-over-UDP messaging system that tunnels chat traffic through DNS TXT queries and responses.
 
 DNS-over-UDP chat prototype with:
@@ -112,3 +114,28 @@ Implemented protections include:
 - Admin password from environment variable (SKYNET_ADMIN_CODE)
 - Room secret hashed (secret_room_id) before DB storage
 - HMAC-signed authenticated requests
+  - Nonce + timestamp replay window checks
+- Per-source request rate limiting
+- Banned users rejected even with stale tokens
+
+FILE TRANSFER NOTES
+-------------------
+
+- Maximum file size is intentionally limited (~350 KB)
+- Files are uploaded in chunked base64 segments
+- Receiver fetches file data chunk-by-chunk via /savefile
+- SHA-256 is verified on save
+
+WINDOWS TERMINAL NOTE
+---------------------
+
+If you see odd prompt behavior in older Windows consoles, prefer Windows Terminal or PowerShell.
+For tab completion support on Windows, install:
+
+    pip install pyreadline3
+
+DISCLAIMER
+----------
+
+This is a prototype, NOT a production-ready secure messaging platform.
+If deploying beyond testing, add transport hardening, key management, monitoring, and abuse controls.
