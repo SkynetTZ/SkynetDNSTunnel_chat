@@ -3,7 +3,10 @@ DNS-over-UDP messaging system that tunnels chat traffic through DNS TXT queries 
 
 <img width="1534" height="475" alt="WhatsApp Image 2026-04-30 at 11 38 44" src="https://github.com/user-attachments/assets/3d27217e-4a9e-4357-9d52-1425d53309be" />
 
-Skynet UDP Tunnel Chat is a Python-based DNS-over-UDP messaging system that tunnels chat traffic through DNS TXT queries and responses.
+# Idea
+Scenario: Suppose that in your country, all internet protocols are restricted, with the exception of DNS, which remains accessible. 
+
+Skynet UDP Tunnel Chat is a DNS-over-UDP messaging system that tunnels chat traffic through DNS TXT queries and responses.
 
 DNS-over-UDP chat prototype with:
 
