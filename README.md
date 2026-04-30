@@ -87,16 +87,16 @@ Each client will prompt for:
 # CLIENT COMMANDS
 ---------------
 
-Plain text                - Send to room peers
-/msg <text>               - Explicit room message
-/users or /user           - List users in your room
-/w <user> <message>       - Send a private message
-/sendfile <path>          - Send file to the room
-/sendfileto <user> <path> - Send file privately
-/files                    - Show received file notifications
-/savefile <file_id> <output_path> - Fetch and save a file
-/clear                    - Clear terminal view
-/quit                     - Exit
+- Plain text                - Send to room peers
+- /msg <text>               - Explicit room message
+- /users or /user           - List users in your room
+- /w <user> <message>       - Send a private message
+- /sendfile <path>          - Send file to the room
+- /sendfileto <user> <path> - Send file privately
+- /files                    - Show received file notifications
+- /savefile <file_id> <output_path> - Fetch and save a file
+- /clear                    - Clear terminal view
+- /quit                     - Exit
 
 Admin-only commands (user auxgrep):
 
