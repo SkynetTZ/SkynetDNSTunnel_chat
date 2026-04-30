@@ -11,7 +11,7 @@ Skynet UDP Tunnel Chat is a DNS-over-UDP messaging system that tunnels chat traf
 DNS-over-UDP chat prototype with:
 
 - `teamserver.py` – asyncio DNS TXT relay + SQLite-backed chat state  
-- `chat.py` – standalone terminal client (no `chat2.py` dependency)  
+- `chat.py` – standalone terminal client   
 - `common_protocol.py` – shared DNS payload encoding/signing helpers  
 
 Designed for WAN testing, NAT‑friendly delivery (poll‑based), and command‑driven terminal use.
