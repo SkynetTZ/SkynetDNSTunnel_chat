@@ -16,6 +16,7 @@ Scenario: Suppose that in your country, all internet protocols are restricted, w
   <img width="1274" height="383" alt="Screenshot 2026-04-30 at 12 24 47" src="https://github.com/user-attachments/assets/0b8e2120-55ac-46f2-ad90-c0abf8161a5d" />
 
 - teamserver verbose
+  
   <img width="1792" height="601" alt="Screenshot 2026-04-30 at 12 27 29" src="https://github.com/user-attachments/assets/3309885d-4f59-4033-91c6-47012e57458b" />
 
 # About
